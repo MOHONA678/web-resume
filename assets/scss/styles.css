@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap");
+@media (min-width: 992px) {
+  nav {
+    width: 15rem;
+    height: 100vh;
+  }
+  nav .navbar-brand {
+    display: none;
+  }
+  nav .profile img {
+    border: 5px solid white;
+  }
+  #content {
+    margin-left: 15rem;
+  }
+}/*# sourceMappingURL=styles.css.map */
