@@ -6,108 +6,94 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Mohona Akter Nabila">
         <title>Mohona Akter Nabila</title>
+        <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
         <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
         <link rel="stylesheet" href="assets/scss/styles.css" />
     </head>
 
     <body>
-        <nav id="navbar-example2" class="navbar navbar-expand-lg bg-dark px-3 mb-3 sticky-top">
-            <a class="navbar-brand" href="#">
-                <!-- <img src="" class="w-200" alt=""> -->
-            </a>
-            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
-                aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="nav nav-pills flex-column my-3">
-                <div class="d-none d-lg-block profile flex-column">
-                    <a href="index.html" class="d-flex justify-content-center align-items-center">
-                        <!-- <img src="" class="w-75 rounded-circle p-1" alt="" /> -->
-                    </a>
-                    <h4 class="text-center text-white mt-5">Mohona Akter Nabila</h4>
-                    <h6 class="text-center text-white mb-5">Designer & Developer</h6>
+        <nav id="sidebar" class="navbar bg-body-secondary navbar-expand-lg px-3 mb-3 sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/logo.png" width="175" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav nav-pills flex-column my-3">
+                        <div class="profile flex-column">
+                            <a href="index.html" class="d-flex justify-content-center align-items-center">
+                                <img src="assets/images/profile.jpeg" class="w-75 rounded-circle p-1" alt="">
+                            </a>
+                            <h3 class="text-center">Mohona Akter Nabila</h3>
+                            <h5 class="text-center">Web Developer</h5>
+                        </div>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark active" aria-current="page" href="#overview">
+                                <i class="fas fa-user-circle" style="width:1rem"></i>
+                                <span class="ps-2">Overview</span>
+                            </a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#about">
+                                <i class="fas fa-user" style="width:1rem"></i>
+                                <span class="ps-2">About</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#academic">
+                                <i class="fas fa-graduation-cap" style="width:1rem"></i>
+                                <span class="ps-2">Academic</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#skill">
+                                <i class="fas fa-chart-area" style="width:1rem"></i>
+                                <span class="ps-2">My Skills</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#project">
+                                <i class="fas fa-folder-open" style="width:1rem"></i>
+                                <span class="ps-2">Project</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#traning">
+                                <i class="fas fa-landmark" style="width:1rem"></i>
+                                <span class="ps-2">Traning</span>
+                            </a>
+                        </li>
+
+                    </ul>
                 </div>
-                <li class="nav-item">
-                    <a class="nav-link text-white active" aria-current="page" href="#overview">
-                        <i class="fas fa-user-circle" style="width: 1rem;"></i>
-                        <span class="ps-2">Overview</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#about">
-                        <i class="fas fa-user" style="width: 1rem;"></i>
-                        <span class="ps-2">About Me</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#academic">
-                        <i class="fas fa-graduation-cap" style="width: 1rem;"></i>
-                        <span class="ps-2">Academic</span>
-                    </a>
-                </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link text-white" href="#employment">
-                        <i class="fas fa-briefcase" style="width: 1rem;"></i>
-                        <span class="ps-2">Employment</span>
-                    </a>
-                </li> -->
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#skills">
-                        <i class="fas fa-chart-area" style="width: 1rem;"></i>
-                        <span class="ps-2">My Skills</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#projects">
-                        <i class="fas fa-folder-open" style="width: 1rem;"></i>
-                        <span class="ps-2">Projects</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#trainings">
-                        <i class="fas fa-landmark" style="width: 1rem;"></i>
-                        <span class="ps-2">Trainings</span>
-                    </a>
-                </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link text-white" href="#achievements">
-                        <i class="fas fa-award" style="width: 1rem;"></i>
-                        <span class="ps-2">Achievements</span>
-                    </a>
-                </li> -->
-            </ul>
-        </div>
-        </div>
-            
+            </div>
         </nav>
         <main id="content" data-bs-spy="scroll" data-bs-target="#sidebar" data-bs-root-margin="0px 0px -40%"
             data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
             <section class="vh-100" id="overview">
-                <h1>Overview</h1>
+                <h2>Overview</h2>
             </section>
             <section class="vh-100" id="about">
-                <h1>About</h1>
+                <h2>About</h2>
             </section>
             <section class="vh-100" id="academic">
-                <h1>Academic</h1>
+                <h2>Academic</h2>
             </section>
-            <!-- <section class="vh-100" id="employment">
-                <h1>Employment</h1>
-            </section> -->
-            <section class="vh-100" id="skills">
-                <h1>Skills</h1>
+            <section class="vh-100" id="skill">
+                <h2>My Skills</h2>
             </section>
-            <section class="vh-100" id="projects">
-                <h1>Projects</h1>
+            <section class="vh-100" id="project">
+                <h2>Project</h2>
             </section>
-            <section class="vh-100" id="trainings">
-                <h1>Trainings</h1>
+            <section class="vh-100" id="traning">
+                <h2>Traning</h2>
             </section>
-            <!-- <section class="vh-100" id="achievements">
-                <h1>Achievements</h1>
-            </section> -->
         </main>
         <script src="assets/js/bootstrap.bundle.min.js"></script>
     </body>
