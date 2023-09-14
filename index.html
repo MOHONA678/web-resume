@@ -6,67 +6,76 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Mohona Akter Nabila">
         <title>Mohona Akter Nabila</title>
+        <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet" />
         <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
         <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
         <link rel="stylesheet" href="assets/scss/styles.css" />
+        <link rel="stylesheet" href="vendor/noframework.waypoints.min.js">
     </head>
 
     <body>
-        <nav id="sidebar" class="navbar bg-body-secondary navbar-expand-lg px-3 mb-3 sticky-top">
+        <nav id="sidebar" class="navbar bg-dark navbar-expand-lg px-3 mb-3 fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand d-inline d-lg-none" href="#">
                     <img src="assets/images/logo.png" width="175" alt="">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="nav nav-pills flex-column my-3">
-                        <div class="profile flex-column">
+                        <div class="d-none d-lg-block profile flex-column">
                             <a href="index.html" class="d-flex justify-content-center align-items-center">
-                                <img src="assets/images/profile.jpeg" class="w-75 rounded-circle p-1" alt="">
+                                <img src="assets/images/profile.jpeg" class="w-75 border border-5 rounded-circle p-1"
+                                    alt="">
                             </a>
-                            <h3 class="text-center">Mohona Akter Nabila</h3>
-                            <h5 class="text-center">Web Developer</h5>
+                            <h3 class="text-center text-white">Mohona Akter Nabila</h3>
+                            <h6 class="text-center text-white">Web Developer</h6>
                         </div>
                         <li class="nav-item">
-                            <a class="nav-link text-dark active" aria-current="page" href="#overview">
-                                <i class="fas fa-user-circle" style="width:1rem"></i>
+                            <a class="nav-link text-white active" aria-current="page" href="#overview">
+                                <i class="fas fa-user-circle" style="width: 1rem;"></i>
                                 <span class="ps-2">Overview</span>
                             </a>
-
                         </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link text-white active" aria-current="page" href="#overview">
+                                <i class="fas fa-user-circle" style="width: 1rem;"></i>
+                                <span>Overview</span>
+                            </a>
+
+                        </li> -->
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="#about">
+                            <a class="nav-link text-white" href="#about">
                                 <i class="fas fa-user" style="width:1rem"></i>
                                 <span class="ps-2">About</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="#academic">
+                            <a class="nav-link text-white" href="#academic">
                                 <i class="fas fa-graduation-cap" style="width:1rem"></i>
                                 <span class="ps-2">Academic</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="#skill">
+                            <a class="nav-link text-white" href="#skill">
                                 <i class="fas fa-chart-area" style="width:1rem"></i>
                                 <span class="ps-2">My Skills</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="#project">
+                            <a class="nav-link text-white" href="#project">
                                 <i class="fas fa-folder-open" style="width:1rem"></i>
                                 <span class="ps-2">Project</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="#traning">
+                            <a class="nav-link text-white" href="#training">
                                 <i class="fas fa-landmark" style="width:1rem"></i>
-                                <span class="ps-2">Traning</span>
+                                <span class="ps-2">Training</span>
                             </a>
                         </li>
 
@@ -74,27 +83,603 @@
                 </div>
             </div>
         </nav>
+
         <main id="content" data-bs-spy="scroll" data-bs-target="#sidebar" data-bs-root-margin="0px 0px -40%"
-            data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-            <section class="vh-100" id="overview">
-                <h2>Overview</h2>
+            data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary rounded-2" tabindex="0">
+
+            <section id="overview" class="vh-100">
+                <div class="overlay">
+                    <h1 class="d-flex align-items-center justify-content-center text-white vh-100">
+                        <b>MOHONA AKTER NABILA</b>
+                    </h1>
+                </div>
+
             </section>
-            <section class="vh-100" id="about">
-                <h2>About</h2>
+            <hr>
+            <section id="about" class="py-5 p-3">
+                <div
+                    class="d-flex align-items-center bg-primary text-white rounded-start-5 title ps-4 pe-4 py-1 mt-3 mb-5">
+                    <div>
+                        <button class="btn btn-icon rounded-circle" disabled>
+                            <i class="fas fa-user"></i>
+                        </button>
+                    </div>
+                    <div class="border-start border-light ms-3 ps-3">
+                        <h4 class="py-0 my-0">About Myself</h4>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <div class="card my-3">
+                            <div class="card-body">
+                                <h4 class="card-title bg-primary text-white rounded-2 ps-3 pe-3 py-1">Personal Details :
+                                </h4>
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th width="200">Full Name</th>
+                                            <td>:</td>
+                                            <td>Mohona Akter Nabila</td>
+                                        </tr>
+                                        <tr>
+                                            <th width="200">Date of Birth</th>
+                                            <td>:</td>
+                                            <td>July 20, 2001</td>
+                                        </tr>
+                                        <tr>
+                                            <th width="200">Nationality</th>
+                                            <td>:</td>
+                                            <td>Bangladeshi</td>
+                                        </tr>
+                                        <tr>
+                                            <th width="200">Gender</th>
+                                            <td>:</td>
+                                            <td>Female</td>
+                                        </tr>
+                                        <tr>
+                                            <th width="200">Religion</th>
+                                            <td>:</td>
+                                            <td>Islam</td>
+                                        </tr>
+                                        <tr>
+                                            <th width="200">Marital Status</th>
+                                            <td>:</td>
+                                            <td>Unmarried</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <div class="card my-3">
+                            <div class="card-body">
+                                <h4 class="card-title bg-primary text-white rounded-2 ps-3 pe-3 py-1">
+                                    Contact Informations
+                                </h4>
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th width="200">
+                                                <i class="fas fa-house"></i>
+                                                <span class="ps-2">Address</span>
+                                            </th>
+                                            <td>:</td>
+                                            <td>
+                                                <span>12/1,D ,Darus-salam </span>
+                                                <br>
+                                                <span class="pt-1">Mirpur, Dhaka-1216</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th width="200">
+                                                <i class="fas fa-phone"></i>
+                                                <span class="ps-2">Cell Phone</span>
+                                            </th>
+                                            <td>:</td>
+                                            <td>
+                                                <a href="tel:+88019********" class="nav-link">+88 (019)********</a>
+                                                <a href="tel:+88019********" class="nav-link">+88 (019)********</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th width="200">
+                                                <i class="fas fa-envelope"></i>
+                                                <span class="ps-1">Email Address</span>
+                                            </th>
+                                            <td>:</td>
+                                            <td>
+                                                <a href="mailto:mohona7735@gmail.com" class="nav-link">
+                                                    mohona7735@gmail.com
+                                                </a>
+                                                <a href="mailto:mohona7735@gmail.com" class="nav-link">
+                                                    mohona7735@gmail.com
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th width="200">
+                                                <i class="fas fa-globe"></i>
+                                                <span class="ps-2">Website</span>
+                                            </th>
+                                            <td>:</td>
+                                            <td>
+                                                <a href="https://www.mohona.isdb-pwad.com" class="nav-link"
+                                                    target="_blank">
+                                                    https://www.mohona.isdb-pwad.com
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <div class="card my-2">
+                            <div class="card-body">
+                                <h4 class="card-title bg-primary text-white rounded-2 ps-3 pe-3 py-1">Physical
+                                    Informations :</h4>
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th width="200">Height</th>
+                                            <td>:</td>
+                                            <td>5 feet 3 inch</td>
+                                        </tr>
+                                        <tr>
+                                            <th width="200">Weight</th>
+                                            <td>:</td>
+                                            <td>54 Kgs</td>
+                                        </tr>
+                                        <tr>
+                                            <th width="200">Blood Group</th>
+                                            <td>:</td>
+                                            <td>(A+)Potitive</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <div class="card my-2">
+                            <div class="card-body">
+                                <h4 class="card-title bg-primary text-white rounded-2 ps-3 pe-3 py-1">Social Media :
+                                </h4>
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th width="50" class="pe-0 me-0">
+                                                <i class="fab fa-facebook"></i>
+                                            </th>
+                                            <td>:</td>
+                                            <td>
+                                                <a href="https://www.facebook.com/naimatabassum.mohona" class="nav-link"
+                                                    target="_blank">Naimatabassum Mohona</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th width="50" class="pe-0 me-0">
+                                                <i class="fab fa-skype"></i>
+                                            </th>
+                                            <td>:</td>
+                                            <td>
+                                                <a href="" class="nav-link" target="_blank">Mohona Akter Nabila</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th width="50" class="pe-0 me-0">
+                                                <i class="fab fa-github"></i>
+                                            </th>
+                                            <td>:</td>
+                                            <td>
+                                                <a href="https://github.com/MOHONA678" class="nav-link"
+                                                    target="_blank">MOHONA678</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card my-2">
+                    <div class="card-body">
+                        <h4 class="card-title bg-primary text-white rounded-2 ps-3 pe-3 py-1">Expertise :</h4>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item ps-0">
+                                <i class="far fa-circle-check"></i>
+                                <span class="ps-2">Web Development</span>
+                            </li>
+                            <li class="list-group-item ps-0">
+                                <i class="far fa-circle-check"></i>
+                                <span class="ps-2">Autocad</span>
+                            </li>
+                            <li class="list-group-item ps-0">
+                                <i class="far fa-circle-check"></i>
+                                <span class="ps-2">Resume Writing</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </section>
-            <section class="vh-100" id="academic">
-                <h2>Academic</h2>
+            <hr>
+
+
+            <section id="academic" class="py-5 p-3">
+                <div
+                    class="d-flex align-items-center bg-primary text-white rounded-start-5 title ps-4 pe-4 py-1  mt-3 my-5">
+                    <div>
+                        <button class="btn btn-icon rounded-circle" disabled>
+                            <i class="fas fa-graduation-cap"></i>
+                        </button>
+                    </div>
+                    <div class="border-start border-light ms-3 ps-3">
+                        <h4 class="py-0 my-0">Academic Qualifications</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <div class="card my-3">
+                            <div class="card-body">
+                                <button class="btn btn-primary mb-2" disabled>
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span class="ps-2">Academic-01</span>
+                                </button>
+
+                                <h3>Diploma-in-Engineering</h3>
+                                <h6>Dhaka Mohila Polytechnic Institute</h6>
+
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th width="200">Board / University</th>
+                                            <td>:</td>
+                                            <td>B.T.E.B.</td>
+                                        </tr>
+                                        <tr>
+                                            <th width="200">Group / Technology</th>
+                                            <td>:</td>
+                                            <td>Electronics</td>
+                                        </tr>
+                                        <tr>
+                                            <th width="200">Roll No.</th>
+                                            <td>:</td>
+                                            <td>926359</td>
+                                        </tr>
+                                        <tr>
+                                            <th width="200">Reg No.</th>
+                                            <td>:</td>
+                                            <td>873706</td>
+                                        </tr>
+                                        <tr>
+                                            <th width="200">Result</th>
+                                            <td>:</td>
+                                            <td>
+                                                <strong>CGPA-3.46</strong>
+                                                <span class="ps-1">(Out of 4.00)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th width="200">Passing Year</th>
+                                            <td>:</td>
+                                            <td>2022</td>
+                                        </tr>
+                                        <tr>
+                                            <th width="200">Duration</th>
+                                            <td>:</td>
+                                            <td>04 Years</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <div class="card my-3">
+                            <div class="card-body">
+                                <button class="btn btn-primary mb-2" disabled>
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span class="ps-2">Academic-02</span>
+                                </button>
+
+                                <h3>Secondary School Certificate (SSC)</h3>
+                                <h6>sheikh Fazilatunnasa Mujib Women TTC</h6>
+
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th width="200">Board / University</th>
+                                            <td>:</td>
+                                            <td>B.T.E.B.</td>
+                                        </tr>
+                                        <tr>
+                                            <th width="200">Group / Technology</th>
+                                            <td>:</td>
+                                            <td>Science</td>
+                                        </tr>
+                                        <tr>
+                                            <th width="200">Roll No.</th>
+                                            <td>:</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th width="200">Reg No.</th>
+                                            <td>:</td>
+                                            <td>199180</td>
+                                        </tr>
+                                        <tr>
+                                            <th width="200">Result</th>
+                                            <td>:</td>
+                                            <td>
+                                                <strong>CGPA-4.96</strong>
+                                                <span class="ps-1">(Out of 5.00)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th width="200">Passing Year</th>
+                                            <td>:</td>
+                                            <td>2017</td>
+                                        </tr>
+                                        <tr>
+                                            <th width="200">Duration</th>
+                                            <td>:</td>
+                                            <td>02 Years</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
             </section>
-            <section class="vh-100" id="skill">
-                <h2>My Skills</h2>
+            <hr>
+            <section id="skill" class="py-5 p-3">
+                <div
+                    class="d-flex align-items-center bg-primary text-white rounded-start-5 title ps-4 pe-4 py-1 mt-3 my-5">
+                    <div>
+                        <button class="btn btn-icon rounded-circle" disabled>
+                            <i class="fas fa-chart-area"></i>
+                        </button>
+                    </div>
+                    <div class="border-start border-light ms-3 ps-3">
+                        <h4 class="py-0 my-0">My Skills</h4>
+
+                    </div>
+                </div>
+                <div class="card my-5">
+                    <div class="card-body">
+                        <h4 class="card-title bg-primary text-white rounded-2 ps-3 pe-3 py-1">Skills :</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia inventore, doloribus ipsum est
+                            suscipit laborum nemo nulla quam porro aperiam mollitia! Ex quod laborum iste accusamus
+                            magnam animi cum voluptates?</p>
+
+                        <div class="row my-2">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                <p>HTML</p>
+                                <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                    <div class="progress-bar bg-warning text-dark" style="width: 80%">80%</div>
+                                </div>
+                                <p>Bootstrap</p>
+                                <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                    <div class="progress-bar bg-warning text-dark" style="width: 80%">80%</div>
+                                </div>
+                                <p>JavaScript</p>
+                                <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                    <div class="progress-bar bg-warning text-dark" style="width: 50%">50%</div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                <p>PHP</p>
+                                <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                    <div class="progress-bar bg-warning text-dark" style="width: 30%">30%</div>
+                                </div>
+                                <p>WordPress</p>
+                                <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                    <div class="progress-bar bg-warning text-dark" style="width: 80%">80%</div>
+                                </div>
+                                <p>Laravel</p>
+                                <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                    <div class="progress-bar bg-warning text-dark" style="width: 70%">70%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section class="vh-100" id="project">
-                <h2>Project</h2>
+
+            <hr>
+            
+            <section id="project" class="py-5 p-3">
+                <div class="d-flex align-items-center bg-primary text-white rounded-start-5 title ps-4 pe-4 py-1 mt-3 my-5">
+                    <div>
+                        <button class="btn btn-icon rounded-circle" disabled>
+                            <i class="fas fa-folder-open"></i>
+                        </button>
+                    </div>
+                    <div class="border-start border-light ms-3 ps-3">
+                        <h4 class="py-0 my-0">Project Showcase</h4>
+                    </div>
+                </div>
+                <div class="row  g-3 g-lg-5">
+                    <div class="col-12 col-md-6 col-lg-12 col-xl-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row g-3">
+                                    <div class="col-4">
+                                        <img src="" class="img-fluid" alt="" />
+                                    </div>
+                                    <div class="col-8">
+                                        <a href="https://github.com/MOHONA678/employee-management-system.git" class="nav-link" target="_blank">
+                                            <h5>HR Management System</h5>
+                                        </a>
+                                        <h6>Web Application</h6>
+                                        <p class="mt-3 mb-1">
+                                            <strong class="mb-1">Technology Used</strong><br />
+                                            <span class="badge bg-secondary rounded-pill">Laravel</span>
+                                            <span class="badge bg-secondary rounded-pill">Blade</span>
+                                            <span class="badge bg-secondary rounded-pill">Bootstrap</span>
+                                            <span class="badge bg-secondary rounded-pill">MySQL</span>
+                                            <span class="badge bg-secondary rounded-pill">AdminLTE</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-12 col-xl-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row g-3">
+                                    <div class="col-4">
+                                        <img src="" class="img-fluid" alt="" />
+                                    </div>
+                                    <div class="col-8">
+                                        <a href="https://github.com/MOHONA678/multiple-authentication-system.git" class="nav-link" target="_blank">
+                                            <h5>multiple-authentication-system</h5>
+                                        </a>
+                                        <h6>Web Application</h6>
+                                        <p class="mt-3 mb-1">
+                                            <strong class="mb-1">Technology Used</strong><br />
+                                            <span class="badge bg-secondary rounded-pill">Laravel</span>
+                                            <span class="badge bg-secondary rounded-pill">Blade</span>
+                                            <span class="badge bg-secondary rounded-pill">Bootstrap</span>
+                                            <span class="badge bg-secondary rounded-pill">MySQL</span>
+                                            <span class="badge bg-secondary rounded-pill">AdminLTE</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-12 col-xl-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row g-3">
+                                    <div class="col-4">
+                                        <img src="" class="img-fluid" alt="" />
+                                    </div>
+                                    <div class="col-8">
+                                        <a href="https://github.com/MOHONA678/web-resume.git" class="nav-link"
+                                            target="_blank">
+                                            <h5>Website-Resume</h5>
+                                        </a>
+                                        <h6>UI/UX Design</h6>
+                                        <p class="mt-3 mb-1">
+                                            <strong class="mb-1">Technology Used</strong><br />
+                                            <span class="badge bg-secondary rounded-pill">HTML</span>
+                                            <span class="badge bg-secondary rounded-pill">SCSS</span>
+                                            <span class="badge bg-secondary rounded-pill">CSS</span>
+                                            <span class="badge bg-secondary rounded-pill">Bootstrap</span>
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
             </section>
-            <section class="vh-100" id="traning">
-                <h2>Traning</h2>
+           
+            <hr>
+
+            <section id="training" class="py-5 p-3">
+                <div class="d-flex align-items-center bg-primary text-white rounded-start-5 title my-5 ps-4 pe-4 py-1 my-5">
+                    <div>
+                        <button class="btn btn-icon rounded-circle" disabled>
+                            <i class="fas fa-landmark"></i>
+                        </button>
+                    </div>
+                    <div class="border-start border-light ms-3 ps-3">
+                        <h3 class="py-0 my-0">Trainings & Workshops</h3>
+                    </div>
+                </div>
+                <div class="card my-5">
+                    <div class="card-body">
+                        <button class="btn btn-primary mb-2" disabled>
+                            <i class="fas fa-landmark"></i>
+                            <span class="ps-2">Training-01</span>
+                        </button>
+                        <div class="row my-2">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 left">
+                                <h4>Professional Web App Development</h4>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 right">
+                                <h4>06 Months</h4>
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 left">
+                                <h6>Genuity Systems Ltd. (Provided By IsDB-BISEW)</h6>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 right">
+                                <h6>Begum Rokeya Sharani, Kazipara, Dhaka-1216</h6>
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <h5>Course Outline :</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <i class="far fa-circle-check"></i>
+                                    <span class="ps-2">Basic concepts of operating system and computer fundamentals</span>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="far fa-circle-check"></i>
+                                    <span class="ps-2">Website design and basic User Interface (UI) creation</span>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="far fa-circle-check"></i>
+                                    <span class="ps-2">Server-side development with RAW and Object-oriented PHP</span>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="far fa-circle-check"></i>
+                                    <span class="ps-2">Database management and its operations using MySQL database</span>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="far fa-circle-check"></i>
+                                    <span class="ps-2">Learned to control and manage Git version and use it</span>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="far fa-circle-check"></i>
+                                    <span class="ps-2">Customization of WordPress themes and create websites</span>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="far fa-circle-check"></i>
+                                    <span class="ps-2">Learned development process of WordPress theme</span>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="far fa-circle-check"></i>
+                                    <span class="ps-2">Develop web applications using PHP Laravel framework</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </section>
+
         </main>
+
         <script src="assets/js/bootstrap.bundle.min.js"></script>
     </body>
 
